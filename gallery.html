@@ -5,7 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gallery - Zamora Memorial College</title>
 
+    <!-- Main site stylesheet -->
     <link rel="stylesheet" href="styles.css">
+
+    <!-- GLightbox (modern zoom) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
 
     <style>
         h1 {
@@ -22,7 +26,7 @@
             padding: 16px;
             border: none;
             font-size: 20px;
-            margin-top: 10px;
+            margin-top: px;
             border-radius: 8px;
             cursor: pointer;
             text-align: left;
@@ -32,7 +36,6 @@
             background: #093866;
         }
 
-        /* Album Content */
         .album-content {
             display: none;
             padding: 15px;
@@ -58,35 +61,6 @@
         .gallery-grid img:hover {
             transform: scale(1.07);
         }
-
-        /* LIGHTBOX */
-        .lightbox {
-            display: none;
-            position: fixed;
-            inset: 0;
-            background: rgba(0,0,0,0.9);
-            justify-content: center;
-            align-items: center;
-            z-index: 9999;
-        }
-
-        .lightbox:target {
-            display: flex;
-        }
-
-        .lightbox img {
-            max-width: 90%;
-            max-height: 90%;
-        }
-
-        .close-btn {
-            position: absolute;
-            top: 30px;
-            right: 40px;
-            font-size: 40px;
-            color: white;
-            text-decoration: none;
-        }
     </style>
 </head>
 
@@ -110,7 +84,7 @@
             <a href="admissions.html">Admissions</a>
             <a href="faculty.html">Faculty</a>
             <a href="gallery.html" style="background:rgba(255,255,255,0.1)">Gallery</a>
-            <a href="COMING.html">Portal</a>
+            <a href="portal.html">Portal</a>
             <a href="contact.html">Contact</a>
         </nav>
     </div>
@@ -125,8 +99,13 @@
 <button class="album-btn">📘 Enrolment</button>
 <div class="album-content gallery-grid">
 
-    <a href="#e1"><img src="img/enrolment_period_for_sy_2025-2026.jpg"></a>
-    <a href="#e2"><img src="img/enrolment_procedure.jpg"></a>
+    <a href="img/enrolment_period_for_sy_2025-2026.jpg" class="glightbox">
+        <img src="img/enrolment_period_for_sy_2025-2026.jpg">
+    </a>
+
+    <a href="img/enrolment_procedure.jpg" class="glightbox">
+        <img src="img/enrolment_procedure.jpg">
+    </a>
 
 </div>
 
@@ -137,14 +116,14 @@
 <button class="album-btn">🎉 Civic Parade</button>
 <div class="album-content gallery-grid">
 
-    <a href="#c1"><img src="img/civic_parade-1.jpg"></a>
-    <a href="#c2"><img src="img/civic_parade-2.jpg"></a>
-    <a href="#c3"><img src="img/civic_parade-3.jpg"></a>
-    <a href="#c4"><img src="img/civic_parade-4.jpg"></a>
-    <a href="#c5"><img src="img/civic_parade-5.jpg"></a>
-    <a href="#c6"><img src="img/civic_parade-6.jpg"></a>
-    <a href="#c7"><img src="img/civic_parade-7.jpg"></a>
-    <a href="#c8"><img src="img/civic_parade-8.jpg"></a>
+    <a href="img/civic_parade-1.jpg" class="glightbox"><img src="img/civic_parade-1.jpg"></a>
+    <a href="img/civic_parade-2.jpg" class="glightbox"><img src="img/civic_parade-2.jpg"></a>
+    <a href="img/civic_parade-3.jpg" class="glightbox"><img src="img/civic_parade-3.jpg"></a>
+    <a href="img/civic_parade-4.jpg" class="glightbox"><img src="img/civic_parade-4.jpg"></a>
+    <a href="img/civic_parade-5.jpg" class="glightbox"><img src="img/civic_parade-5.jpg"></a>
+    <a href="img/civic_parade-6.jpg" class="glightbox"><img src="img/civic_parade-6.jpg"></a>
+    <a href="img/civic_parade-7.jpg" class="glightbox"><img src="img/civic_parade-7.jpg"></a>
+    <a href="img/civic_parade-8.jpg" class="glightbox"><img src="img/civic_parade-8.jpg"></a>
 
 </div>
 
@@ -155,9 +134,17 @@
 <button class="album-btn">⛪ Nuestra Señora</button>
 <div class="album-content gallery-grid">
 
-    <a href="#n1"><img src="img/gallery_1_-_visit_of_nuestra_senora_delasamparados.jpg"></a>
-    <a href="#n2"><img src="img/gallery_2_-_visit_of_nuestra_senora_delasamparados.jpg"></a>
-    <a href="#n3"><img src="img/gallery_3_-_visit_of_nuestra_senora_delasamparados.jpg"></a>
+    <a href="img/gallery_1_-_visit_of_nuestra_senora_delasamparados.jpg" class="glightbox">
+        <img src="img/gallery_1_-_visit_of_nuestra_senora_delasamparados.jpg">
+    </a>
+
+    <a href="img/gallery_2_-_visit_of_nuestra_senora_delasamparados.jpg" class="glightbox">
+        <img src="img/gallery_2_-_visit_of_nuestra_senora_delasamparados.jpg">
+    </a>
+
+    <a href="img/gallery_3_-_visit_of_nuestra_senora_delasamparados.jpg" class="glightbox">
+        <img src="img/gallery_3_-_visit_of_nuestra_senora_delasamparados.jpg">
+    </a>
 
 </div>
 
@@ -165,5 +152,77 @@
 <!-- ========================= -->
 <!--    ALBUM 4: ACHIEVEMENTS  -->
 <!-- ========================= -->
-<button class="album-btn">🏅 Achievements
+<button class="album-btn">🏅 Achievements</button>
+<div class="album-content gallery-grid">
 
+    <a href="img/af680478-d165-4453-8161-1b4004885ad7.png" class="glightbox">
+        <img src="img/af680478-d165-4453-8161-1b4004885ad7.png">
+    </a>
+
+    <a href="img/c2e52852-410e-4953-850e-a01c547820a4.png" class="glightbox">
+        <img src="img/c2e52852-410e-4953-850e-a01c547820a4.png">
+    </a>
+
+</div>
+
+
+<!-- ========================= -->
+<!--     ALBUM 5: FACILITIES   -->
+<!-- ========================= -->
+<button class="album-btn">🏫 Facilities</button>
+<div class="album-content gallery-grid">
+
+    <a href="img/ZMC-LOGO.png" class="glightbox">
+        <img src="img/ZMC-LOGO.png">
+    </a>
+
+</div>
+
+
+<!-- FOOTER -->
+<footer style="background:#0b4a8b;color:white;padding:22px;margin-top:28px">
+    <div style="max-width:1100px;margin:auto;display:flex;justify-content:space-between;">
+        <div>
+            <strong>Zamora Memorial College</strong><br>
+            Sto. Niño St., Barangay 9, Bacacay, Philippines<br>
+            Contact: 0917 503 7892<br>
+        </div>
+        <div style="text-align:right">
+            FB: <a href="https://web.facebook.com/ZMCOfficial" style="color:#ffeb99">ZMC Official</a>
+        </div>
+    </div>
+</footer>
+
+
+
+<!-- GLightbox JS -->
+<script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+<script>
+    // Zoom viewer with "click image again to close"
+    const lightbox = GLightbox({
+        selector: '.glightbox',
+        touchNavigation: true,
+        zoomable: true,
+        closeOnOutsideClick: true,
+        closeOnClick: true
+    });
+
+    // Accordion logic
+    document.querySelectorAll(".album-btn").forEach(btn => {
+        btn.addEventListener("click", () => {
+            const content = btn.nextElementSibling;
+
+            // Close others
+            document.querySelectorAll(".album-content").forEach(sec => {
+                if (sec !== content) sec.style.display = "none";
+            });
+
+            // Toggle this album
+            content.style.display = content.style.display === "grid" ? "none" : "grid";
+        });
+    });
+</script>
+
+</body>
+</html>

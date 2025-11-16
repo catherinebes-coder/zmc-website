@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Zamora Memorial College</title>
+
+    <!-- MAIN SITE STYLES -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        h1 {
+            padding-left: 20px;
+            margin-top: 30px;
+            font-size: 40px;
+        }
+
+        /* GALLERY GRID */
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 18px;
+            padding: 25px;
+        }
+
+        .gallery-grid img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-grid img:hover {
+            transform: scale(1.08);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        }
+
+        /* LIGHTBOX BACKDROP */
+        .lightbox {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.9);
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 10px;
+            box-shadow: 0 0 20px #fff;
+        }
+
+        .lightbox:target {
+            display: flex;
+        }
+
+        /* CLOSE BUTTON */
+        .close-btn {
+            position: absolute;
+            top: 30px;
+            right: 40px;
+            font-size: 40px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .close-btn:hover {
+            color: #ccc;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Gallery</h1>
+
+    <div class="gallery-grid">
+
+        <!-- Each image has a link to open the lightbox -->
+        <a href="#img1"><img src="img/ZMC-LOGO.png"></a>
+        <a href="#img2"><img src="img/shs_strands_offered.jpg"></a>
+        <a href="#img3"><img src="img/1238f540-10e2-4a2e-bcdc-1f3697f0f1f7.png"></a>
+        <a href="#img4"><img src="img/jhs_ad.jpg"></a>
+        <a href="#img5"><img src="img/announcement_recent.jpg"></a>
+        <a href="#img6"><img src="img/enrolment_period_for_sy_2025-2026.jpg"></a>
+        <a href="#img7"><img src="img/jhs_admission_reqt.jpg"></a>
+        <a href="#img8"><img src="img/shs_admission_reqt.jpg"></a>
+        <a href="#img9"><img src="img/enrolment_procedure.jpg"></a>
+        <a href="#img10"><img src="img/cover_page_zmc_ad.jpg"></a>
+
+        <a href="#img11"><img src="img/civic_parade-1.jpg"></a>
+        <a href="#img12"><img src="img/civic_parade-6.jpg"></a>
+        <a href="#img13"><img src="img/civic_parade-3.jpg"></a>
+        <a href="#img14"><img src="img/civic_parade-2.jpg"></a>
+        <a href="#img15"><img src="img/civic_parade-7.jpg"></a>
+        <a href="#img16"><img src="img/civic_parade-8.jpg"></a>
+        <a href="#img17"><img src="img/civic_parade-4.jpg"></a>
+        <a href="#img18"><img src="img/civic_parade-5.jpg"></a>
+
+        <a href="#img19"><img src="img/gallery_1_-_visit_of_nuestra_senora_delasamparados.jpg"></a>
+        <a href="#img20"><img src="img/gallery_2_-_visit_of_nuestra_senora_delasamparados.jpg"></a>
+        <a href="#img21"><img src="img/gallery_3_-_visit_of_nuestra_senora_delasamparados.jpg"></a>
+
+        <a href="#img22"><img src="img/af680478-d165-4453-8161-1b4004885ad7.png"></a>
+        <a href="#img23"><img src="img/c2e52852-410e-4953-850e-a01c547820a4.png"></a>
+
+    </div>
+
+    <!-- LIGHTBOXES (auto-generated containers for fullscreen view) -->
+
+    <div id="img1" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/ZMC-LOGO.png"></div>
+    <div id="img2" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/shs_strands_offered.jpg"></div>
+    <div id="img3" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/1238f540-10e2-4a2e-bcdc-1f3697f0f1f7.png"></div>
+    <div id="img4" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/jhs_ad.jpg"></div>
+    <div id="img5" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/announcement_recent.jpg"></div>
+    <div id="img6" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/enrolment_period_for_sy_2025-2026.jpg"></div>
+    <div id="img7" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/jhs_admission_reqt.jpg"></div>
+    <div id="img8" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/shs_admission_reqt.jpg"></div>
+    <div id="img9" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/enrolment_procedure.jpg"></div>
+    <div id="img10" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/cover_page_zmc_ad.jpg"></div>
+
+    <div id="img11" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-1.jpg"></div>
+    <div id="img12" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-6.jpg"></div>
+    <div id="img13" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-3.jpg"></div>
+    <div id="img14" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-2.jpg"></div>
+    <div id="img15" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-7.jpg"></div>
+    <div id="img16" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-8.jpg"></div>
+    <div id="img17" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-4.jpg"></div>
+    <div id="img18" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/civic_parade-5.jpg"></div>
+
+    <div id="img19" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/gallery_1_-_visit_of_nuestra_senora_delasamparados.jpg"></div>
+    <div id="img20" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/gallery_2_-_visit_of_nuestra_senora_delasamparados.jpg"></div>
+    <div id="img21" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/gallery_3_-_visit_of_nuestra_senora_delasamparados.jpg"></div>
+
+    <div id="img22" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/af680478-d165-4453-8161-1b4004885ad7.png"></div>
+    <div id="img23" class="lightbox"><a href="#" class="close-btn">&times;</a><img src="img/c2e52852-410e-4953-850e-a01c547820a4.png"></div>
+
+</body>
+</html>

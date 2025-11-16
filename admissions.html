@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admissions — Zamora Memorial College</title>
+
+  <!-- Minimal page CSS so accordion looks like the site -->
+  <style>
+    :root{
+      --navy:#0f4a78;
+      --accent:#f0c419;
+      --bg:#f4f7f9;
+      --card:#ffffff;
+      --muted:#7a8a96;
+    }
+    body{font-family: "Segoe UI", Roboto, Arial, sans-serif; margin:0; background:var(--bg); color:#123;}
+    header{background:linear-gradient(#114a78,#0d3b63); color:#fff; padding:18px 24px; box-shadow: 0 2px 6px rgba(0,0,0,.12);}
+    .nav{max-width:1100px; margin:0 auto; display:flex; align-items:center; gap:24px;}
+    .logo{font-weight:700; font-size:20px;}
+    nav a{color:#fff; text-decoration:none; margin-left:12px; font-weight:600;}
+    main{max-width:1100px; margin:26px auto; padding:0 18px;}
+    h1{font-size:30px; margin-bottom:12px;}
+
+    /* Accordion styles */
+    .accordion-wrap{margin-top:18px;}
+    .accordion-item{background:transparent; margin-bottom:12px; border-radius:10px; overflow:hidden;}
+    .adm-accordion-btn{
+      display:block;
+      text-align:left;
+      width:100%;
+      border:0;
+      background:#eee;
+      padding:20px 22px;
+      font-size:18px;
+      font-weight:600;
+      cursor:pointer;
+      box-shadow: 0 6px 18px rgba(10,30,50,.06);
+      transition:transform .12s ease, background .12s;
+      border-left:6px solid transparent;
+    }
+    .adm-accordion-btn:hover{transform:translateY(-2px);}
+    .adm-accordion-btn.active{background:#fff; border-left-color:var(--navy);}
+
+    .adm-accordion-content{
+      max-height:0;
+      overflow:hidden;
+      background:var(--card);
+      transition:max-height .33s ease, padding .22s ease;
+      padding:0 22px;
+      border-radius:0 0 10px 10px;
+      box-shadow: 0 6px 18px rgba(10,30,50,.06);
+    }
+    .adm-accordion-content.open{padding:18px 22px 22px;}
+    .adm-accordion-content p{margin:0 0 8px;}
+    .adm-accordion-content ul{margin:6px 0 0 20px;}
+    .adm-accordion-content li{margin-bottom:6px; color:var(--muted); line-height:1.5;}
+
+    /* make sure it looks good on small screens */
+    @media (max-width:600px){
+      .adm-accordion-btn{padding:16px;}
+      .adm-accordion-content{padding:0 16px;}
+    }
+  </style>
+</head>
+<body>
+
+  <!-- simple header/nav — keep this or replace with your site's header -->
+  <header>
+    <div class="nav">
+      <div class="logo">Zamora Memorial College</div>
+      <nav style="margin-left:auto">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="academics.html">Academics</a>
+        <a href="admissions.html">Admissions</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="coming.html">Portal</a>
+	<a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <h1>Admission Requirements &amp; Procedures</h1>
+
+    <div class="accordion-wrap">
+
+      <!-- High School -->
+      <div class="accordion-item">
+        <button class="adm-accordion-btn" aria-expanded="false">High School Requirements</button>
+        <div class="adm-accordion-content" aria-hidden="true">
+          <ul>
+            <li>Report card (Form 138)</li>
+            <li>Form 137 / SF 10 (if applicable)</li>
+            <li>Medical certificate</li>
+            <li>Dental certificate</li>
+            <li>Photocopy of PSA / NSO birth certificate</li>
+            <li>Parent's certificate of unemployment or recent BIR tax form (if required)</li>
+            <li>2 pcs. 2x2 ID pictures</li>
+            <li>1 pc. long white folder</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Senior High School -->
+      <div class="accordion-item">
+        <button class="adm-accordion-btn" aria-expanded="false">Senior High School Requirements</button>
+        <div class="adm-accordion-content" aria-hidden="true">
+          <ul>
+            <li>Report card (Form 138)</li>
+            <li>Form 137 / SF 10</li>
+            <li>Medical certificate</li>
+            <li>Dental certificate</li>
+            <li>Photocopy of PSA / NSO birth certificate</li>
+            <li>ESC grantee certification (if from other private JH schools)</li>
+            <li>Certificate of Good Moral Character</li>
+            <li>1 pc. long brown plastic envelope</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- College -->
+      <div class="accordion-item">
+        <button class="adm-accordion-btn" aria-expanded="false">College Requirements</button>
+        <div class="adm-accordion-content" aria-hidden="true">
+          <ul>
+            <li>Authenticated TOR / Form 138 (for transferees or graduates)</li>
+            <li>Certificate of Good Moral</li>
+            <li>Photocopy of PSA / NSO birth certificate</li>
+            <li>2 pcs. passport-sized ID pictures</li>
+            <li>Honorable dismissal (for transferees)</li>
+            <li>Miscellaneous documents as required by specific programs (e.g., BSCrim)</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Enrollment Procedures (from the poster text) -->
+      <div class="accordion-item">
+        <button class="adm-accordion-btn" aria-expanded="false">Enrollment Procedures</button>
+        <div class="adm-accordion-content" aria-hidden="true">
+          <h4>Step 1 — Fill out the Enrollment Form</h4>
+          <p><strong>Area:</strong> Hallway of JHS Building<br>
+             <strong>Assisted by:</strong> Ms. Aleah and Ms. Nicole</p>
+
+          <h4>Step 2 — Verification of Documents/Requirements</h4>
+          <p><strong>Area:</strong> Hallway of JHS Building<br>
+             <strong>Validators:</strong> Ms. Elaiza, Ms. Nenia, and Ms. Anabel</p>
+
+          <h4>Step 3 — Assessment of Payment</h4>
+          <p><strong>Area:</strong> ICT Hub<br>
+             <strong>Assisted by:</strong> Mr. Rolando</p>
+
+          <h4>Step 4 — Club Fees &amp; SPTA Fees</h4>
+          <p><strong>Area:</strong> Hallway of JHS Building<br>
+             <strong>Assisted by:</strong> Ms. Norma B. Cardiño &amp; SSLG Officers (JHS), Ms. Jhoms Baliza &amp; SSLG Officers (SHS)</p>
+
+          <h4>Step 5 — Payment</h4>
+          <p><strong>Area:</strong> Cashier's Office</p>
+
+          <h4>Step 6 — Fitting of PE Uniform</h4>
+          <p><strong>Area:</strong> ICT Hub<br>
+             <strong>Assisted by:</strong> Ms. Russel</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer (simple) -->
+  <footer style="background:var(--navy); color:#fff; padding:24px 18px; margin-top:28px;">
+    <div style="max-width:1100px; margin:0 auto;">
+      Zamora Memorial College — Sto. Niño St., Barangay 9, Bacacay, Albay • Contact: 0917 503 7892 • Email: zmc10241948@gmail.com
+    </div>
+  </footer>
+
+  <!-- Accordion JS (self-contained and robust) -->
+  <script>
+    (function(){
+      // Find all accordion buttons
+      const buttons = document.querySelectorAll('.adm-accordion-btn');
+
+      // Attach click handler to each button
+      buttons.forEach(btn => {
+        btn.addEventListener('click', function(){
+          const content = this.nextElementSibling; // the .adm-accordion-content
+
+          // Close any other open panel (optional: keep only one open)
+          document.querySelectorAll('.adm-accordion-content.open').forEach(openEl => {
+            if (openEl !== content) {
+              openEl.style.maxHeight = null;
+              openEl.classList.remove('open');
+              const siblingBtn = openEl.previousElementSibling;
+              if (siblingBtn) siblingBtn.classList.remove('active');
+              if (siblingBtn) siblingBtn.setAttribute('aria-expanded','false');
+              openEl.setAttribute('aria-hidden','true');
+            }
+          });
+
+          // Toggle this one
+          if (content.classList.contains('open')) {
+            content.style.maxHeight = null;
+            content.classList.remove('open');
+            this.classList.remove('active');
+            this.setAttribute('aria-expanded','false');
+            content.setAttribute('aria-hidden','true');
+          } else {
+            content.classList.add('open');
+            content.style.maxHeight = content.scrollHeight + "px";
+            this.classList.add('active');
+            this.setAttribute('aria-expanded','true');
+            content.setAttribute('aria-hidden','false');
+          }
+        });
+      });
+
+      // Optional: ensure accordion panels resize on window resize
+      window.addEventListener('resize', function(){
+        document.querySelectorAll('.adm-accordion-content.open').forEach(openEl => {
+          openEl.style.maxHeight = openEl.scrollHeight + "px";
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
